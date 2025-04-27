@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Inicio de Sesión</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f8f8;
+    }
+    header nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      background-color: white;
+    }
+    .navbar {
+      display: flex;
+      background-color: #e51a71;
+      width: 100%;
+      justify-content: center;
+    }
+    .navbar a {
+      flex: 1;
+      padding: 14px;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      border-right: 1px solid #cccccc;
+    }
+    .navbar a:last-child {
+      border-right: none;
+    }
+    .navbar a:hover {
+      background-color: #d0145b;
+    }
+    section.login {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .login h1 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .form-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    .form-group button {
+      width: 100%;
+      padding: 10px;
+      background-color: #e51a71;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .form-group button:hover {
+      background-color: #d0145b;
+    }
+    footer {
+      background-color: #f2f2f2;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <img src="01_Imgs/logo-Cesde-2023.svg" width="420" height="240" alt="Logo Cesde">
+
+    <div class="navbar">
+      <a href="01_Index.html">Inicio</a>
+      <a href="02_Servicios.html">Servicios</a>
+      <a href="03_Blog.html">Blog</a>
+      <a href="04_Contacto.html">Contacto</a>
+      <a href="05_Ubicacion.html">Ubicación</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="login">
+    <h1>Iniciar Sesión</h1>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" name="usuario" required>
+      </div>
+      <div class="form-group">
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required>
+      </div>
+      <div class="form-group">
+        <button type="submit">Iniciar Sesión</button>
+      </div>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <h6>© 2023 CESDE - Todos los derechos reservados.</h6>
+</footer>
+
+</body>
+</html>

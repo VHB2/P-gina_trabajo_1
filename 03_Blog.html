@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina_trabajo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        header nav {
+            background-color: #fff;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .navbar {
+            display: flex;
+            background-color: #e51a71;
+            width: 100%;
+            justify-content: center;
+        }
+        .navbar a {
+            flex: 1;
+            padding: 14px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-right: 1px solid #cccccc;
+        }
+        .navbar a:last-child {
+            border-right: none;
+        }
+        .navbar a:hover {
+            background-color: #e51a71;
+        }
+        .login-btn {
+            background-color: #e51a71;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        section {
+            padding: 20px;
+        }
+        .contacto-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 20px;
+        }
+        .columna {
+            flex: 1;
+            min-width: 300px;
+        }
+        .columna h2 {
+            color: #e51a71;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        .columna ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .columna ul li {
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+        .icono {
+            margin-right: 8px;
+            color: #e51a71;
+        }
+        footer {
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <img src="01_Imgs/logo-Cesde-2023.svg" width="250" height="150" alt="logo_Cesde">
+        <button class="login-btn" onclick="location.href='./06_Login.html'">Iniciar Sesión</button>
+    </nav>
+    <div class="navbar">
+        <a href="01_Index.html">Inicio</a>
+        <a href="02_Servicios.html">Servicios</a>
+        <a href="03_Blog.html">Blog</a>
+        <a href="04_Contacto.html">Contacto</a>
+        <a href="05_Ubicacion.html">Ubicación</a>
+    </div>
+</header>
+
+<section>
+    <h1>Blog</h1>
+    <p>Accede a contenido exclusivo sobre tecnología, educación y más. Inicia sesión para ver las publicaciones.</p>
+</section>
+
+<footer>
+    <h6>© 2023 CESDE - Todos los derechos reservados.</h6>
+</footer>
+
+</body>
+</html>
