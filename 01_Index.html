@@ -1,78 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina_trabajo</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Préstamo de Equipos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f8f8;
+    }
+    header nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      background-color: white;
+    }
+    .navbar {
+      display: flex;
+      background-color: #e51a71;
+      width: 100%;
+      justify-content: center;
+    }
+    .navbar a {
+      flex: 1;
+      padding: 14px;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      border-right: 1px solid #cccccc;
+    }
+    .navbar a:last-child {
+      border-right: none;
+    }
+    .navbar a:hover {
+      background-color: #d0145b;
+    }
+    main {
+      padding: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    main h1 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+    main p, main ul {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
+    }
+    main ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+    main ul li {
+      margin-bottom: 10px;
+    }
+    footer {
+      background-color: #f2f2f2;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      margin-top: 30px;
+    }
+  </style>
 </head>
-<header>
-<nav>
-    
-        <img src="01_Imgs/logo-Cesde-2023.svg" 
-        width="420"
-        height="240"
-        alt="logo_Cesde">
-        
-        <style>
-            body {
-              margin: 0;
-              font-family: 'Arial', sans-serif;
-            }
-            .navbar {
-              display: flex;
-              background-color: #e51a71;
-            }
-            .navbar a {
-              flex: 1; /* Todos los botones del mismo ancho */
-              padding: 14px;
-              color: white;
-              text-align: center;
-              text-decoration: none;
-              font-size: 18px;
-              font-weight: bold;
-              border-right: 1px solid #cccccc; /* Línea entre botones */
-            }
-            .navbar a:last-child {
-              border-right: none; /* No poner línea en el último */
-            }
-            .navbar a:hover {
-              background-color: #e51a71; /* Cambio de color al pasar el mouse */
-            }
-          </style>
-    
-    <div class="navbar">
-    
-        <a href="01_Index.html">Inicio</a>
-        <a href="02_Servicios.html">Servicios</a>
-        <a href="03_Blog.html">Blog</a>
-        <a href="04_Contacto.html">Contacto</a>
-        <a href="05_Ubicacion.html">Ubicación</a>
-        
-    </div>
-
-</nav>
-</header>
 
 <body>
-    <section>
-        <h1>Bienvenido al sistema de préstamo de equipos de cómputo</h1>
-            <p>Este sistema está diseñado para facilitar el acceso a equipos tecnológicos dentro de la institución CESDE, <br>garantizando un uso responsable y equitativo.</p>
-    </section>
 
-    <section>
-        <h1>Reglas y políticas de préstamo</h1>
-        <ul>
-            <li>Los equipos solo pueden ser prestados y utilizados <strong>dentro de las instalaciones de la institución CESDE.</strong></li>
-            <li>Solo pueden solicitar préstamos <strong>personas activas</strong> con vínculo laboral o estudiantil en la institución.</li>
-            <li>El préstamo de equipos tiene un límite de <strong>3 horas</strong> por solicitud.</li>
-            <li>Si el equipo se entrega después del tiempo establecido, el usuario será <strong>suspendido por 1 mes</strong> después de la tercera infracción.</li>
-        </ul>
-    </section>
+<header>
+  <nav>
+    <img src="01_Imgs/logo-Cesde-2023.svg" width="420" height="240" alt="Logo Cesde">
 
-</body>
+    <div class="navbar">
+      <a href="01_Index.html">Inicio</a>
+      <a href="02_Servicios.html">Servicios</a>
+      <a href="03_Blog.html">Blog</a>
+      <a href="04_Contacto.html">Contacto</a>
+      <a href="05_Ubicacion.html">Ubicación</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <h1>Bienvenido al sistema de préstamo de equipos de cómputo</h1>
+    <p>Este sistema está diseñado para facilitar el acceso a equipos tecnológicos dentro de la institución CESDE,<br> garantizando un uso responsable y equitativo.</p>
+  </section>
+
+  <section>
+    <h1>Reglas y políticas de préstamo</h1>
+    <ul>
+      <li>Los equipos solo pueden ser prestados y utilizados <strong>dentro de las instalaciones de la institución CESDE.</strong></li>
+      <li>Solo pueden solicitar préstamos <strong>personas activas</strong> con vínculo laboral o estudiantil en la institución.</li>
+      <li>El préstamo de equipos tiene un límite de <strong>3 horas</strong> por solicitud.</li>
+      <li>Si el equipo se entrega después del tiempo establecido, el usuario será <strong>suspendido por 1 mes</strong> después de la tercera infracción.</li>
+    </ul>
+  </section>
+</main>
 
 <footer>
-    <h6>© 2023 CESDE - Todos los derechos reservados.</h6>
+  <h6>© 2023 CESDE - Todos los derechos reservados.</h6>
 </footer>
+
+</body>
 </html>
