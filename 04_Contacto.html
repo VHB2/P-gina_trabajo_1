@@ -1,78 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina_trabajo</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        header nav {
+            background-color: #fff;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .navbar {
+            display: flex;
+            background-color: #e51a71;
+            width: 100%;
+            justify-content: center;
+        }
+        .navbar a {
+            flex: 1;
+            padding: 14px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-right: 1px solid #cccccc;
+        }
+        .navbar a:last-child {
+            border-right: none;
+        }
+        .navbar a:hover {
+            background-color: #e51a71;
+        }
+        .login-btn {
+            background-color: #e51a71;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        section {
+            padding: 20px;
+        }
+        .contacto-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 20px;
+        }
+        .columna {
+            flex: 1;
+            min-width: 300px;
+        }
+        .columna h2 {
+            color: #e51a71;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        .columna ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .columna ul li {
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+        .icono {
+            margin-right: 8px;
+            color: #e51a71;
+        }
+        footer {
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+    </style>
 </head>
+
+<body>
+
 <header>
-<nav>
-    
-        <img src="01_Imgs/logo-Cesde-2023.svg" 
-        width="420"
-        height="240"
-        alt="logo_Cesde">
-        
-        <style>
-            body {
-              margin: 0;
-              font-family: 'Arial', sans-serif;
-            }
-            .navbar {
-              display: flex;
-              background-color: #e51a71;
-            }
-            .navbar a {
-              flex: 1; /* Todos los botones del mismo ancho */
-              padding: 14px;
-              color: white;
-              text-align: center;
-              text-decoration: none;
-              font-size: 18px;
-              font-weight: bold;
-              border-right: 1px solid #cccccc; /* Línea entre botones */
-            }
-            .navbar a:last-child {
-              border-right: none; /* No poner línea en el último */
-            }
-            .navbar a:hover {
-              background-color: #e51a71; /* Cambio de color al pasar el mouse */
-            }
-          </style>
-    
+    <nav>
+        <img src="01_Imgs/logo-Cesde-2023.svg" width="250" height="150" alt="logo_Cesde">
+        <button class="login-btn" onclick="location.href='./06_Login.html'">Iniciar Sesión</button>
+    </nav>
     <div class="navbar">
-    
         <a href="01_Index.html">Inicio</a>
         <a href="02_Servicios.html">Servicios</a>
         <a href="03_Blog.html">Blog</a>
         <a href="04_Contacto.html">Contacto</a>
         <a href="05_Ubicacion.html">Ubicación</a>
-        
     </div>
-
-</nav>
 </header>
 
-<body>
-    <section>
-        <h1>Bienvenido al sistema de préstamo de equipos de cómputo</h1>
-            <p>Este sistema está diseñado para facilitar el acceso a equipos tecnológicos dentro de la institución CESDE, <br>garantizando un uso responsable y equitativo.</p>
-    </section>
+<section>
+    <h1>Contactos</h1>
+    <p>Puedes contactarnos en los siguientes canales:</p>
 
-    <section>
-        <h1>Reglas y políticas de préstamo</h1>
-        <ul>
-            <li>Los equipos solo pueden ser prestados y utilizados <strong>dentro de las instalaciones de la institución CESDE.</strong></li>
-            <li>Solo pueden solicitar préstamos <strong>personas activas</strong> con vínculo laboral o estudiantil en la institución.</li>
-            <li>El préstamo de equipos tiene un límite de <strong>3 horas</strong> por solicitud.</li>
-            <li>Si el equipo se entrega después del tiempo establecido, el usuario será <strong>suspendido por 1 mes</strong> después de la tercera infracción.</li>
-        </ul>
-    </section>
+    <div class="contacto-info">
+        <div class="columna">
+            <h2><i class="fas fa-phone icono"></i> Teléfonos</h2>
+            <ul>
+                <li>390 500 7777</li>
+                <li>390 500 7778</li>
+                           
+            </ul>
 
-</body>
+            <h2><i class="fab fa-whatsapp icono"></i> WhatApp</h2>
+            <p style="color: #e51a71; font-size: 20px;">390 500 7779</p>
+        </div>
+
+        <div class="columna">
+            <h2><i class="fas fa-users icono"></i> Vinculados Medellín</h2>
+            <ul>
+                <li>servicios@cesde.edu.co</li>
+            </ul>
+
+            <h2><i class="fas fa-map-marker-alt icono"></i> Vinculados Regiones</h2>
+            <ul>
+                <li>serviciosreg@cesde.edu.co</li>
+                <li>390 500 7780</li>
+            </ul>
+
+        </div>
+    </div>
+</section>
 
 <footer>
     <h6>© 2023 CESDE - Todos los derechos reservados.</h6>
 </footer>
+
+</body>
 </html>
